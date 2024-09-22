@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Quick Read Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="showdown.min.js"></script>
+    <script src="highlight.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <select id="language-select" title="Select Language">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="ko">한국어</option>
+            </select>
+            <button id="summarize-btn">Summarize</button>
+        </div>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 id="summary-header">Summary</h2>
+                <button class="copy-btn" data-target="summary-container">Copy</button>
+                <button class="toggle-btn" data-target="summary-container">Collapse</button>
+            </div>
+            <div id="summary-container" class="expandable-content"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 id="qa-header">Q&A</h2>
+                <button class="copy-btn" data-target="answer-container">Copy</button>
+                <button class="toggle-btn" data-target="qa-container">Collapse</button>
+            </div>
+            <div id="qa-container" class="expandable-content">
+                <div id="question-container">
+                    <input type="text" id="question-input" placeholder="Enter your question">
+                    <button id="ask-btn">Ask</button>
+                </div>
+                <div id="answer-container"></div>
+            </div>
+        </div>
+        <div id="api-key-container">
+            <label for="api-key-input">API Key:</label>
+            <input type="password" id="api-key-input" placeholder="Enter your Gemini API key">
+            <button id="save-api-key-btn">Save API Key</button>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>

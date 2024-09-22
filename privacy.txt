@@ -1,0 +1,97 @@
+# 快速阅读助手 Chrome 扩展隐私权政策
+# Privacy Policy for Quick Read Assistant Chrome Extension
+
+最后更新日期：[插入日期]
+Last Updated: [Insert Date]
+
+## 中文版本
+
+1. 引言
+   快速阅读助手（"我们"、"我们的"或"本扩展程序"）致力于保护您的隐私。本隐私权政策说明了我们如何收集、使用、披露和保护您通过使用我们的Chrome扩展程序而提供的信息。
+
+2. 信息收集
+   2.1 我们收集的信息：
+   - 网页内容：为了生成摘要和回答问题，我们会临时处理您正在浏览的网页内容。
+   - 用户偏好设置：如语言选择等。
+   - 使用数据：如功能使用频率、错误报告等。
+
+   2.2 我们不收集的信息：
+   - 个人身份信息：如姓名、电子邮件地址、电话号码等。
+   - 浏览历史：我们不会跟踪或存储您的整体浏览历史。
+
+3. 信息使用
+   我们使用收集的信息：
+   - 提供和改进我们的服务，包括生成内容摘要和回答问题。
+   - 优化用户体验和扩展程序性能。
+   - 遵守法律要求。
+
+4. 信息共享
+   我们不会出售、交易或以其他方式转让您的信息给外部各方。这不包括协助我们运营网站、开展业务或为用户提供服务的可信第三方，前提是这些方同意对此信息保密。
+
+5. 数据安全
+   我们采取合理的安全措施来保护您的信息不被未经授权的访问、使用或披露。
+
+6. 第三方服务
+   我们使用Google的Gemini API进行内容处理。请注意，我们不会向Gemini API传输任何个人识别信息。
+
+7. 用户权利
+   您有权：
+   - 访问我们持有的关于您的信息。
+   - 要求更正不准确的信息。
+   - 要求删除您的信息。
+   - 反对我们处理您的信息。
+
+8. 儿童隐私
+   本扩展程序不面向13岁以下的儿童。我们不会故意收集儿童的个人信息。
+
+9. 政策变更
+   我们可能会不时更新本隐私权政策。我们建议您定期查看此页面以了解最新信息。
+
+10. 联系我们
+    如果您对本隐私权政策有任何问题，请联系我们：[您的联系邮箱]
+
+## English Version
+
+1. Introduction
+   Quick Read Assistant ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Chrome extension.
+
+2. Information Collection
+   2.1 Information we collect:
+   - Web page content: To generate summaries and answer questions, we temporarily process the content of the web pages you are browsing.
+   - User preferences: Such as language selection.
+   - Usage data: Such as feature usage frequency, error reports, etc.
+
+   2.2 Information we do not collect:
+   - Personal identifiable information: Such as name, email address, phone number, etc.
+   - Browsing history: We do not track or store your overall browsing history.
+
+3. Use of Information
+   We use the collected information to:
+   - Provide and improve our services, including generating content summaries and answering questions.
+   - Optimize user experience and extension performance.
+   - Comply with legal requirements.
+
+4. Information Sharing
+   We do not sell, trade, or otherwise transfer your information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing users, so long as those parties agree to keep this information confidential.
+
+5. Data Security
+   We implement reasonable security measures to protect your information from unauthorized access, use, or disclosure.
+
+6. Third-Party Services
+   We use Google's Gemini API for content processing. Please note that we do not transmit any personally identifiable information to the Gemini API.
+
+7. User Rights
+   You have the right to:
+   - Access the information we hold about you.
+   - Request correction of any inaccurate information.
+   - Request deletion of your information.
+   - Object to our processing of your information.
+
+8. Children's Privacy
+   This extension is not intended for children under 13 years of age. We do not knowingly collect personal information from children.
+
+9. Policy Changes
+   We may update this Privacy Policy from time to time. We encourage you to review this page periodically for the latest information.
+
+10. Contact Us
+    If you have any questions about this Privacy Policy, please contact us at: [Your contact email]

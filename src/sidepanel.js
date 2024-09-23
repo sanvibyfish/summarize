@@ -60,7 +60,7 @@ const translations = {
         collapse: "ย่อ",
         expand: "ขยาย",
         question: "ป้อนคำถามของคุณ",
-        ask: "ถาม",
+        ask: "ถม",
         apiKeyPlaceholder: "ป้อนคีย์ API Gemini ของคุณ",
         saveApiKey: "บันทึกคีย์ API",
         apiKeySaved: "บันทึกคีย์ API แล้ว",
@@ -111,7 +111,7 @@ function updateLanguage(lang) {
     document.getElementById('summary-header').textContent = translations[lang].summary;
     document.getElementById('qa-header').textContent = translations[lang].qa;
     document.querySelectorAll('.toggle-btn').forEach(btn => {
-        btn.textContent = btn.textContent === translations[lang].collapse ? translations[lang].collapse : translations[lang].expand;
+        btn.textContent = btn.textContent ? translations[lang].collapse : translations[lang].expand;
     });
     document.getElementById('question-input').placeholder = translations[lang].question;
     document.getElementById('ask-btn').textContent = translations[lang].ask;
@@ -240,8 +240,28 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const targetId = button.getAttribute('data-target');
             const targetElement = document.getElementById(targetId);
-            targetElement.classList.toggle('collapsed');
-            button.textContent = targetElement.classList.contains('collapsed') ? translations[currentLanguage].expand : translations[currentLanguage].collapse;
+            const isCollapsed = targetElement.classList.toggle('collapsed');
+            
+            // 更新按钮文本
+            button.textContent = isCollapsed ? translations[currentLanguage].expand : translations[currentLanguage].collapse;
+
+            // 如果折叠的是 qa-container，我们需要特殊处理
+            if (targetId === 'qa-container') {
+                const questionContainer = document.getElementById('question-container');
+                const answerContainer = document.getElementById('answer-container');
+                if (isCollapsed) {
+                    questionContainer.style.display = 'none';
+                    answerContainer.style.display = 'none';
+                } else {
+                    questionContainer.style.display = 'flex';
+                    answerContainer.style.display = 'block';
+                }
+            }
+
+            // 添加一个小延迟来触发重排，确保过渡效果正常工作
+            setTimeout(() => {
+                targetElement.style.display = isCollapsed ? 'none' : 'block';
+            }, 300); // 300ms 是我们在 CSS 中设置的过渡时间
         });
     });
 
@@ -286,7 +306,7 @@ function renderMarkdown(content, containerId) {
                 table.classList.add('markdown-table');
             });
         } catch (error) {
-            console.error('Markdown 渲染错误:', error);
+            console.error('Markdown 渲染错:', error);
             container.textContent = content;
         }
     } else {

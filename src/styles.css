@@ -330,6 +330,8 @@ button:disabled {
     border: 1px solid #ddd;
     border-radius: 4px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-header {
@@ -354,8 +356,6 @@ button:disabled {
     color: #4a90e2;
     padding: 5px;
     margin-left: 5px;
-    display: flex;
-    align-items: center;
 }
 
 .toggle-btn:hover, .copy-btn:hover {
@@ -364,6 +364,10 @@ button:disabled {
 
 /* 确保在深色模式下按钮也能正常显示 */
 @media (prefers-color-scheme: dark) {
+    .section-container {
+        border-color: #555;
+    }
+
     .section-header {
         background-color: #333;
         border-bottom-color: #555;
@@ -426,7 +430,7 @@ button, input, select, h2 {
     overflow-y: auto; /* 允许垂直滚动 */
 }
 
-/* 确保在深色模式下滚动条样式适配 */
+/* 确在深色模式下滚动条样式适配 */
 @media (prefers-color-scheme: dark) {
     #summary-container, #answer-container {
         scrollbar-color: #555 #2d2d2d; /* 滚动条颜色 */
@@ -471,4 +475,19 @@ button, input, select, h2 {
     #answer-container::-webkit-scrollbar-thumb:hover {
         background: #777;
     }
+}
+
+/* 添加 Collapse 功能 */
+.expandable-content {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 1000px; /* 调整这个值以适应您的内容 */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.expandable-content.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
 }

@@ -23,12 +23,12 @@ Quick Read Assistant is a powerful Chrome extension designed to enhance your web
 
 ## 安装 / Installation
 
-1. 访问 [Chrome 网上应用店](https://chrome.google.com/webstore/category/extensions)（链接待更新）
+1. 访问 [Chrome 网上应用店](https://chromewebstore.google.com/detail/web-quick-read-assistant/ggjaffkfobclagkldamjeepfkbigopch)（链接待更新）
 2. 搜索"快速阅读助手"或直接访问我们的扩展页面
 3. 点击"添加至 Chrome"按钮
 4. 在弹出的对话框中确认安装
 
-1. Visit the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) (link to be updated)
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/web-quick-read-assistant/ggjaffkfobclagkldamjeepfkbigopch) (link to be updated)
 2. Search for "Quick Read Assistant" or directly visit our extension page
 3. Click the "Add to Chrome" button
 4. Confirm the installation in the pop-up dialog
@@ -76,13 +76,17 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 如果您有任何问题或建议，请随时联系我们：
 
 - 电子邮件：[sanvibyfish@gmail.com]
-- 问题追踪：[GitHub Issues 页面链接]
+- 问题追踪：[[GitHub Issues 页面链接](https://github.com/sanvibyfish/summarize/issues)]
 
 If you have any questions or suggestions, please feel free to contact us:
 
 - Email: [sanvibyfish@gmail.com]
-- Issue Tracker: [Link to GitHub Issues page]
+- Issue Tracker: [[Link to GitHub Issues page](https://github.com/sanvibyfish/summarize/issues)]
 
+
+## 请我喝杯咖啡吧 / Buy me a cup of coffee.
+
+EVM: 0x516Fd301D9e9642b33AdFc3153C310968943AfF3
 ---
 
 Made with ❤️ by Sanvi
